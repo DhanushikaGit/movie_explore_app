@@ -1,0 +1,19 @@
+@use "../../scss/variable" as *;
+
+.input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: $border-radius;
+    border: none;
+    background-color: lighten($body-bg, 5%);
+    color: $txt-color;
+    font-size: 1.6rem;
+    font-family: $font-family;
+    box-shadow: $box-shadow;
+    outline: none;
+    transition: box-shadow 0.3s;
+
+    &:focus {
+        box-shadow: 0 0 0 2px $main-color;
+    }
+}
